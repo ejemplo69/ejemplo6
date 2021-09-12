@@ -1,58 +1,155 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="shortcut icon" href="imgs/ayuda1.png" type="image/x-icon">
-        <title>html5</title>
-    </head>
-    <body>
-        <header>
-            <!-- <h1></h1> -->
-            <!-- <]H2>H2</H2> -->
-            <!-- <H5>H5</H5> -->
-        </header>
-        
-        
-        <section>
-            <h1>lista ordenada</h1>
-            <ol start="5">
-                <li>opcion 1</li>
-                <li>opcion 2</li>
-                <li>opcion 3</li>
-                <li>opcion 4</li>
-            </ol>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="imgs/ayuda2.jpg" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO</h1>
+    </header>
 
-            <h1>lista desordenada</h1>
+    <SEction>
+        <div>
+        <form action="">
+            <fieldset>
+                <legend>Parte Uno</legend>
+                <label for="nombre">Nombre
+                    <input type="text" id="nombre" maxlength="20" placeholder="escribe tu nombre" value="marcos gomez" readonly>
+                </label>
+                <br> <br>
+                <label for="cc">Documento
+                    <input type="text" id="cc" maxlength="20" placeholder="escribe tu nombre" value="324242535" readonly>
+                </label>
 
-            <ul>
-                <li>opcion 1</li>
-                <li>opcion 2</li>
-                <li>opcion 3</li>
-                <li>opcion 4</li> 
-            </ul>
+                <br><br>
+                <!-- rango -->
+                <label for="edad"> Edad
+                    <input type="range" name="" id="edad" min="18" max="65" value="18" step="5">
+                </label>
 
-            <p id="uno" class="red">
+                <br><br>
+                <!-- number -->
+                <label for="tiempo_en_empresa">tiempo en la empresa
+                    <input type="number" name="" id="tiempo_en_empresa" step="2" min="1" max="30" value="1">
+                </label>
+                <br><br>
 
-            </p>
-            <P id="dos" class="red">
-                Lorem <em>ipsum</em>  <strong>dolor</strong>  sit amet <a href="otra.html">consectetur</a> , adipisicing elit. <BR> Similique, iusto autem. </BR> Itaque error hic similique accusantium soluta. Accusantium magnam ducimus numquam aliquam odit quas dicta, a aliquid excepturi placeat rem!
-            </P>
-            <hr>
-            <a href="otra.html" target="blank">   
-                <img src="imgs/images (2).jpg" alt="HTML5" > 
-            </a> 
-            <!-- <br> -->
+                <!-- password -->
+                <label for="password">Contraseña
+                    <input type="password" name="" id="password">
+                </label>
+                <br><br>
 
-            <img src="HTTPS://REMOTEMANAGER.000WEBHOSTAPP.COM/lenguaje-html5.jpg" alt="html5" width="600" height="250">
-            <img src="https://res.cloudinary.com/ddahhvcks/image/upload/v1631320326/ejemplo2/ayuda5_tsxafj.jpg" alt="pc">
-        </section>
-        
-            
-        <footer>
+                <!-- date -->
+                <label for="fecha">Ingresa una Fecha
+                    <input type="date" name="" id="fecha" min="2019-08-29" max="2021-09-12" value="2021-07-02">
+                </label>
+                <br><br>
 
-        </footer>
-    </body> 
+                <!-- colores -->
+                <label for="color">Seleccione un color
+                    <input type="color" name="" id="color" value="#A533FF">
+                </label>
+                <br><br>
+
+                <!-- archivos -->
+                <label for="file">Busque un archivos
+                    <input type="file" name="" id="file" multiple>
+                </label>
+                <br><br>
+
+                <!-- correo -->
+                <label for="correo">correo
+                    <input type="email" name="" id="correo">
+                </label>
+            </fieldset>
+            <input type="button" value="enviar">
+            <!-- <input type="submit" value="enviar_form"> -->
+            <input type="reset" value="reset">
+        </form>
+    </div>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div>
+        <fieldset>
+            <legend>Parte Dos</legend>
+            <select name="" id="">
+                <option value="1">Medellin</option>
+                <option value="2">Monteria</option>
+                <option value="3">Barranquilla</option>
+                <option value="4">Cali</option>
+            </select> <br>
+
+            <h1>(RADIO) ESTADO CIVIL</h1>
+            <!-- radio -->
+            <label for="">
+                <input type="radio" name="estado_civil" id="">
+                Casad@
+            </label><br>
+
+            <label for="">
+                <input type="radio" name="estado_civil" id="" checked>
+                Solter@
+            </label><br>
+
+            <label for="">
+                <input type="radio" name="estado_civil" id="">
+                Viud@
+            </label><br>
+
+            <label for="">
+                <input type="radio" name="estado_civil" id="">
+                Divorciad@
+            </label><BR><BR>
+
+            <!-- CHECKBOX -->
+            <h1>(CHECKBOX) ARTE</h1>
+            <label for="">
+                <input type="checkbox" name="" id="" value="1">
+                Dibujar
+            </label><br>
+
+            <label for="">
+                <input type="checkbox" name="" id=""  value="2">
+                Cantar
+            </label><br>
+
+            <label for="">
+                <input type="checkbox" name="" id="" value="3">
+                Bailar
+            </label><br>
+
+            <label for="">
+                <input type="checkbox" name="" id="" value="3" checked>
+                Programar
+            </label><br><br>
+
+            <!-- texarea -->
+            <h1>(TEXAREA) OPCIONAL</h1>
+            <textarea name="" id="" cols="60" rows="5"></textarea>
+            <br><br>
+
+            <!-- DATALIST -->
+            <H1>(DATALIST)</H1>
+            <label for="">Ciudad
+                <input type="text" name="ciudad" id="" list="ciudades">
+                
+                <datalist id="ciudades">
+                    <option value="Medellin">Medellin</option>
+                    <option value="Monteria">Monteria</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Cali">Cali</option>
+                </datalist>
+            </label>
+
+        </fieldset>
+    </div>
+    </SEction>
+    
+</body>
 </html>
