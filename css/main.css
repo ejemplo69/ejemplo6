@@ -1,10 +1,90 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8e8e8;
+}
+
 section{
     display: flex;
 }
 
-artitle{
-    width: 50%;
-}
 div{
     width: 50%;
+}
+
+/* estilos redes sociales */
+#social{
+    position: fixed;
+    background: rgb(7, 14, 119);
+    width: 170px;
+    text-align: center;
+    top: 0%;
+    left: 0;
+    border-radius: 0px 0px 20px 0px;
+}
+
+/* stilos menu  */
+.menu{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    background-color: blue;
+    
+}
+.menu ul{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    
+    /* background: rgb(3, 3, 78); */   
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a:hover{ /*responde al tocar el elemento con el cursor */
+    background: yellow;
+    color: black;
+}
+
+
+/* menu elementos */
+.menu_elem{
+    background:rgb(229, 233, 9) ;
+    position: relative;
+    width: 400px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.menu_elem img{
+    position: relative;
+    margin: 3px;
+    top: 3px;
+}
+
+.menu_elem button{
+    position: relative;
+    bottom: 8px;
+    margin: 3px;
+}
+
+.menu_elem a{
+    position: relative;
+    text-decoration: none;
+    bottom: 8px;
+    margin: 3px;
+}
+
+.menu_elem select{
+    position: relative;
+    bottom: 8px;
+    margin: 3px;
+}
+
+.menu_elem img:hover{
+    background: aqua;
 }
